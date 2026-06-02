@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={`${geistMono.className} h-full antialiased`}>
-            <body className="min-h-full flex flex-col bg-black text-white">
+            <body className="bg-black text-white">
                 <LayoutBackground />
                 {children}
             </body>

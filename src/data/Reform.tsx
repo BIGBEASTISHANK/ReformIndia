@@ -5,4 +5,5 @@ export interface IReform {
     description: string;
 }
 
-export const REFORMS: IReform[] = [];
+export const REFORMS: IReform[] = [
+];
