@@ -11,7 +11,7 @@ export default function Footer() {
                         <p className="mt-3 text-sm leading-7 text-white/45">
                             Made by{" "}
                             <a
-                                href="https://bigbeastishank.com"
+                                href="https://github.com/BIGBEASTISHANK"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-white transition hover:text-[#1793D1]"

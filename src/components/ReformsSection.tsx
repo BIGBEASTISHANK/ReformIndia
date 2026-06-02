@@ -141,23 +141,23 @@ export default function ReformsSection() {
                                             </div>
 
                                             {/* content grid */}
-                                            <div className="mt-6 grid grid-cols-1 gap-5 border-t border-white/[0.07] pt-6 lg:grid-cols-[0.9fr_1.4fr] lg:gap-8">
-                                                <div>
-                                                    <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#1793D1]">
-                                                        Why this matters
-                                                    </p>
-
-                                                    <p className="mt-3 text-sm leading-7 text-white/55">{reform.why}</p>
-                                                </div>
-
+                                            <div className="mt-6 grid grid-cols-1 gap-5 border-t border-white/[0.07] pt-6 lg:grid-cols-[1.4fr_0.9fr] lg:gap-8">
                                                 <div>
                                                     <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#1793D1]">
                                                         Proposed change
                                                     </p>
 
-                                                    <p className="mt-3 text-sm leading-7 text-white/45">
+                                                    <p className="mt-3 text-sm leading-7 text-white/55">
                                                         {reform.description}
                                                     </p>
+                                                </div>
+
+                                                <div>
+                                                    <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[#1793D1]">
+                                                        Why this matters
+                                                    </p>
+
+                                                    <p className="mt-3 text-sm leading-7 text-white/45">{reform.why}</p>
                                                 </div>
                                             </div>
 
@@ -170,6 +170,26 @@ export default function ReformsSection() {
                         );
                     })}
                 </div>
+
+                {/* Notice */}
+                <motion.div
+                    initial={{ opacity: 0, y: 18 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{
+                        duration: 0.7,
+                        delay: 0.15,
+                        ease: EASE,
+                    }}
+                    className="mt-6 max-w-3xl rounded-xl border border-[#1793D1]/20 bg-[#1793D1]/5 p-4"
+                >
+                    <p className="text-xs sm:text-sm leading-6 text-white/60">
+                        <span className="font-semibold text-[#d11717]">Important:</span> These ideas are thought out and
+                        put together loosely. I have not yet designed a proper framework for how each one would be
+                        implemented, or what safeguards and fail-safes should exist for anti-policy risks. Feel free to
+                        suggest changes.
+                    </p>
+                </motion.div>
             </div>
         </section>
     );
