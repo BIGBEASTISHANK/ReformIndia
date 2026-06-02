@@ -22,6 +22,13 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={`${geistMono.className} h-full antialiased`}>
+            <head>
+                <script
+                    src="https://cdn.counter.dev/script.js"
+                    data-id="297190ea-2088-4f36-9e54-cadbfc8c65b7"
+                    data-utcoffset="6"
+                ></script>
+            </head>
             <body className="bg-black text-white">
                 <LayoutBackground />
                 {children}
